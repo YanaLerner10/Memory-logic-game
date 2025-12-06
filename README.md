@@ -4,9 +4,15 @@
 
 > **Train your brain, one digit at a time.** ✨
 
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python)
-![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+![Python](https://img.shields.io/badge/Python-3.8%2B-FFB7B2?style=for-the-badge&logo=python&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Active-B5EAD7?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-C7CEEA?style=for-the-badge)
+
+<br />
+
+<br />
+
+</div>
 
 ## 🦄 About The Game
 
@@ -83,3 +89,5 @@ Created with 💖 by **Yana**
 <br>
 
 *Enjoying the game? Give this repo a ⭐!*
+
+</div>
