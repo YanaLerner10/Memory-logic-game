@@ -89,14 +89,4 @@ If you want to create a small website or a polished GUI, here are concrete recom
 Add to your HTML head (example):
 
 ```html
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
-```
-
-### Background ideas (what to download)
-
-1. **Soft pastel gradient** — PNG or SVG gradient image (large, 1920×1080). Use keywords to search: "pastel gradient background", "soft peach mint gradient".
-2. **Subtle pattern / texture** — e.g., paper grain or a noise texture at very low opacity to avoid flat look. Search for: "subtle paper texture seamless".
-3. **Small decorative SVGs** — tiny icons like hearts, bows, confetti, or sparkles (vector so they scale). Use keywords: "cute confetti SVG", "pastel sparkles svg".
-4. **Logo** — a small ribbon or bow icon (SVG) to match the title.
-
-**Where to downloa
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Fira+Code:wght@400;600&displa
