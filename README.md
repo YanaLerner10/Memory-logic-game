@@ -2,7 +2,7 @@
 
 > **Train your brain, one digit at a time.** ✨
 
-![Python](https://img.shields.io/badge/Python-3.8%2B-FFB7B2?style=for-the-badge\&logo=python\&logoColor=white) ![Status](https://img.shields.io/badge/Status-Active-B5EAD7?style=for-the-badge) ![License](https://img.shields.io/badge/License-MIT-C7CEEA?style=for-the-badge)
+![Python](https://img.shields.io/badge/Python-3.8%2B-FFB7B2?style=for-the-badge\&logo=python\&logoColor=white)
 
 ---
 
@@ -14,8 +14,6 @@
 * **Round 5:** Sequence gets longer and more challenging.
 * **Round 10+:** Memory workout mode!
 
-The project separates logic from presentation: `memory_logic.py` contains the game rules and checks, while `gui_game.py` and `main.py` provide graphical and terminal interfaces respectively. Full type hints and readable code make this repo easy to study and extend.
-
 ---
 
 ## 🍭 Project Structure
@@ -25,7 +23,6 @@ The project separates logic from presentation: `memory_logic.py` contains the ga
 | `memory_logic.py`  | 🧠 Core logic    | Generates sequences, validates input, and manages rounds.             |
 | `gui_game.py`      | 💻 GUI (Tkinter) | A small, pastel-themed windowed version.                              |
 | `main.py`          | ⌨️ CLI           | Terminal/console playable version — good for CI/testing.              |
-| `requirements.txt` | 📦 Dependencies  | Python requirements (if any).                                         |
 | `assets/`          | 🎨 Images & CSS  | (Optional) background, logo, and theme files for a web or desktop UI. |
 
 ---
@@ -51,8 +48,6 @@ python gui_game.py
 python main.py
 ```
 
----
-
 ## ⚡ Game Rules (Short)
 
 1. A sequence of digits (0–9) is displayed for a few seconds.
@@ -61,32 +56,3 @@ python main.py
 
 ---
 
-## 🪄 Developer Notes
-
-* The code is intentionally modular to make unit testing straightforward. Focus your tests on `memory_logic.py`.
-* Use type hints and descriptive variable names when extending.
-* Add logging if you want to trace game flow for debugging.
-
----
-
-## 🎨 Website theme & assets (suggestions)
-
-If you want to create a small website or a polished GUI, here are concrete recommendations to get a cute pastel aesthetic that matches the README vibe.
-
-### Color palette (pastel)
-
-* `--peach: #FFDDE1`
-* `--mint:  #B5EAD7`
-* `--lavender: #C7CEEA`
-* `--cream: #FFF7E6`
-* `--text-soft: #3B3A3A`
-
-### Fonts (Google Fonts suggestions)
-
-* **Primary (friendly UI):** `Poppins` or `Nunito`
-* **Monospace (code blocks):** `Fira Code` or `JetBrains Mono`
-
-Add to your HTML head (example):
-
-```html
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Fira+Code:wght@400;600&displa
