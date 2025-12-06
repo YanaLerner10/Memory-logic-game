@@ -14,27 +14,26 @@
 * **Round 5:** Five numbers. Getting harder.
 * **Round 10:** ...Can you keep up?
 
-The logic is separated entirely from the interface, meaning you can play this game in a **Desktop Window**, on a **Website**, or even in the **Terminal**.
+The logic is separated entirely from the interface, designed with clean "Pythonic" code and full type hinting.
 
 ---
 
 ## 📂 Project Structure
 
-This repository is organized into three main layers:
+This repository is organized into three main components:
 
 | File | Type | Description |
 | :--- | :--- | :--- |
-| `memory_logic.py` | **The Brain** | Contains the core game rules. It generates random sequences and checks your answers. It has zero user interface code. |
-| `gui_game.py` | **Desktop App** | A graphical window (GUI) built with **Tkinter**. Run this to play on your computer. |
-| `app.py` | **Web Server** | A **Flask** server that allows you to play the game in a web browser. |
-| `templates/` | **Web Design** | Contains the HTML/CSS for the web version of the game. |
+| `memory_logic.py` | **The Brain** | Contains the core game rules. It generates random sequences and checks your answers. It has zero user interface code and is fully testable. |
+| `gui_game.py` | **Desktop App** | A graphical window (GUI) built with **Tkinter**. Run this to play with a visual interface. |
+| `main.py` | **CLI Game** | A terminal-based version of the game for quick testing and playing in the command line. |
 
 ---
 
 ## 🚀 How to Play
 
 ### Option 1: The Desktop App (GUI)
-The easiest way to play on Windows.
+The best experience on Windows.
 
 1.  Ensure you have Python installed.
 2.  Run the game:
@@ -43,24 +42,20 @@ The easiest way to play on Windows.
     ```
 3.  A window will pop up. Press **Start**, memorize the number, and type it in!
 
-### Option 2: The Web Version
-Play in your favorite browser (Chrome, Edge, etc.).
+### Option 2: The Terminal (CLI)
+Play directly in your command prompt.
 
-1.  Install Flask (one time only):
+1.  Run the script:
     ```bash
-    pip install flask
+    python main.py
     ```
-2.  Start the server:
-    ```bash
-    python app.py
-    ```
-3.  Click the link in the terminal (usually `http://127.0.0.1:5000`) to play.
+2.  Follow the on-screen prompts.
 
 ---
 
 ## ⚡ Game Rules
 
-1.  **Watch:** A sequence of numbers (0-9) will appear on the screen.
+1.  **Watch:** A sequence of numbers (0-9) will appear.
 2.  **Memorize:** You have a few seconds to memorize them before they disappear.
 3.  **Repeat:** Type the sequence back exactly as it was shown.
 4.  **Survive:** If you are correct, the sequence gets longer by one digit. If you fail, it's Game Over!
@@ -71,8 +66,7 @@ Play in your favorite browser (Chrome, Edge, etc.).
 
 * **Language:** Python 3
 * **GUI Framework:** Tkinter (Standard Python Library)
-* **Web Framework:** Flask
-* **Styling:** Custom CSS (for the web version)
+* **Architecture:** Separation of Concerns (Logic vs. UI)
 
 ---
 
