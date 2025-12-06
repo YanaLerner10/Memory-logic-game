@@ -1,93 +1,102 @@
-<div align="center">
-
-# 🎀 PyMemory Challenge 🎀
+# 🎀 PyMemory Challenge
 
 > **Train your brain, one digit at a time.** ✨
 
-![Python](https://img.shields.io/badge/Python-3.8%2B-FFB7B2?style=for-the-badge&logo=python&logoColor=white)
-![Status](https://img.shields.io/badge/Status-Active-B5EAD7?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-C7CEEA?style=for-the-badge)
+![Python](https://img.shields.io/badge/Python-3.8%2B-FFB7B2?style=for-the-badge\&logo=python\&logoColor=white) ![Status](https://img.shields.io/badge/Status-Active-B5EAD7?style=for-the-badge) ![License](https://img.shields.io/badge/License-MIT-C7CEEA?style=for-the-badge)
 
-<br />
-
-<br />
-
-</div>
+---
 
 ## 🦄 About The Game
 
-**PyMemory Challenge** is a super cute sequence memorization game built with Python. The concept is simple but addictive: the game shows you a sequence of numbers, and you must repeat it back exactly! 💖
+**PyMemory Challenge** is a sweet, minimal sequence-memorization game written in Python. The concept is simple: the program shows a sequence of numbers for a short time and you must repeat it back exactly. The game grows gradually in difficulty — great for short practice sessions or demonstrating clean code structure.
 
-* **Round 1:** One number. Easy peasy. 🌸
-* **Round 5:** Five numbers. Getting harder!
-* **Round 10:** ...Can you keep up?
+* **Round 1:** One number — easy warmup.
+* **Round 5:** Sequence gets longer and more challenging.
+* **Round 10+:** Memory workout mode!
 
-The logic is separated entirely from the interface, designed with clean code and full type hinting.
+The project separates logic from presentation: `memory_logic.py` contains the game rules and checks, while `gui_game.py` and `main.py` provide graphical and terminal interfaces respectively. Full type hints and readable code make this repo easy to study and extend.
 
 ---
 
 ## 🍭 Project Structure
 
-This repository is organized into three main components:
-
-| File | Type | Description |
-| :--- | :--- | :--- |
-| `memory_logic.py` | **🧠 The Brain** | Contains the core game rules. It generates random sequences and checks your answers. |
-| `gui_game.py` | **💻 Desktop App** | A graphical window (GUI) built with **Tkinter**. Run this to play with a visual interface. |
-| `main.py` | **⌨️ CLI Game** | A terminal-based version of the game for quick testing. |
-
----
-
-## 🚀 How to Play
-
-### Option 1: The Desktop App (GUI) 🌷
-*The best experience on Windows!*
-
-1.  Ensure you have Python installed.
-2.  Run the game:
-    ```bash
-    python gui_game.py
-    ```
-3.  A window will pop up. Press **Start**, memorize the number, and type it in!
-
-### Option 2: The Terminal (CLI) ☁️
-*Play directly in your command prompt.*
-
-1.  Run the script:
-    ```bash
-    python main.py
-    ```
-2.  Follow the on-screen prompts.
+| File               | Role             | What it does                                                          |
+| ------------------ | ---------------- | --------------------------------------------------------------------- |
+| `memory_logic.py`  | 🧠 Core logic    | Generates sequences, validates input, and manages rounds.             |
+| `gui_game.py`      | 💻 GUI (Tkinter) | A small, pastel-themed windowed version.                              |
+| `main.py`          | ⌨️ CLI           | Terminal/console playable version — good for CI/testing.              |
+| `requirements.txt` | 📦 Dependencies  | Python requirements (if any).                                         |
+| `assets/`          | 🎨 Images & CSS  | (Optional) background, logo, and theme files for a web or desktop UI. |
 
 ---
 
-## ⚡ Game Rules
+## ✅ Requirements
 
-1.  **Watch:** A sequence of numbers (0-9) will appear. 👀
-2.  **Memorize:** You have a few seconds to memorize them before they disappear. 💭
-3.  **Repeat:** Type the sequence back exactly as it was shown.
-4.  **Survive:** If you are correct, the sequence gets longer! If you fail, it's Game Over. 💔
+* Python 3.8+
+* (Optional) `requirements.txt` — run `pip install -r requirements.txt` if present.
 
 ---
 
-## 🛠️ Tech Stack
+## 🚀 Run the Game
 
-* **Language:** Python 3 🐍
-* **GUI Framework:** Tkinter
-* **Vibe:** 100% Pastel ✨
+### Desktop GUI (Tkinter)
+
+```bash
+python gui_game.py
+```
+
+### Terminal / CLI
+
+```bash
+python main.py
+```
 
 ---
 
-<div align="center">
+## ⚡ Game Rules (Short)
 
-### 👩‍💻 Author
+1. A sequence of digits (0–9) is displayed for a few seconds.
+2. Memorize the sequence, then type it back exactly.
+3. Correct → next round (sequence grows). Wrong → Game Over.
 
-Created with 💖 by **Yana**
-<br>
-*Molecular Biology Specialist & Python Developer*
+---
 
-<br>
+## 🪄 Developer Notes
 
-*Enjoying the game? Give this repo a ⭐!*
+* The code is intentionally modular to make unit testing straightforward. Focus your tests on `memory_logic.py`.
+* Use type hints and descriptive variable names when extending.
+* Add logging if you want to trace game flow for debugging.
 
-</div>
+---
+
+## 🎨 Website theme & assets (suggestions)
+
+If you want to create a small website or a polished GUI, here are concrete recommendations to get a cute pastel aesthetic that matches the README vibe.
+
+### Color palette (pastel)
+
+* `--peach: #FFDDE1`
+* `--mint:  #B5EAD7`
+* `--lavender: #C7CEEA`
+* `--cream: #FFF7E6`
+* `--text-soft: #3B3A3A`
+
+### Fonts (Google Fonts suggestions)
+
+* **Primary (friendly UI):** `Poppins` or `Nunito`
+* **Monospace (code blocks):** `Fira Code` or `JetBrains Mono`
+
+Add to your HTML head (example):
+
+```html
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+```
+
+### Background ideas (what to download)
+
+1. **Soft pastel gradient** — PNG or SVG gradient image (large, 1920×1080). Use keywords to search: "pastel gradient background", "soft peach mint gradient".
+2. **Subtle pattern / texture** — e.g., paper grain or a noise texture at very low opacity to avoid flat look. Search for: "subtle paper texture seamless".
+3. **Small decorative SVGs** — tiny icons like hearts, bows, confetti, or sparkles (vector so they scale). Use keywords: "cute confetti SVG", "pastel sparkles svg".
+4. **Logo** — a small ribbon or bow icon (SVG) to match the title.
+
+**Where to downloa
