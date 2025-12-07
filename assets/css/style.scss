@@ -17,12 +17,17 @@
 
 /* Global page colors */
 body {
+  .page-header {
   background: linear-gradient(
     135deg,
-    #FFFFFF 20%,
-    #FFFDFC 20%,
-    #FFEFF5 40%,
+    #FFFFFF 0%,
+    #FFFDFC 40%,
+    #FFEFF5 70%,
     #FFF8FC 100%
+  );
+  color: #2F3A3D !important;
+}
+
   );
   color: #2F3A3D !important;
 }
