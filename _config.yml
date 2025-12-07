@@ -18,4 +18,5 @@ plugins:
 
 # If you add custom folders (like assets/, images/, pages/)
 include:
-  - assets
+   - assets
+  - _layouts
