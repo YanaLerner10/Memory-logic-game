@@ -3,7 +3,7 @@ description: "Cute pink memory game"
 url: "https://yanalerner10.github.io"
 baseurl: "/Memory-logic-game"
 
-theme: jekyll-theme-minimal
+theme: jekyll-theme-modernist
 
 plugins:
   - jekyll-feed
