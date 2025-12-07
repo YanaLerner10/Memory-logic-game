@@ -73,3 +73,9 @@ a:hover {
   padding: 1.2rem 0;
   font-family: "Helvetica", "Arial", sans-serif;
 }
+/* Center the main content block but keep text left-aligned */
+.main-content {
+  max-width: 900px;    /* nice readable width */
+  margin: 2rem auto;   /* centers the whole block horizontally */
+  text-align: left;    /* makes sure text stays left-aligned */
+}
