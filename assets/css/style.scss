@@ -19,14 +19,14 @@
 body {
   background: linear-gradient(
     135deg,
-    #FFFFFF 0%,
-    #FFFDFD 40%,
-    #FDF7FA 70%,
-    #FAF9FF 100%
+    #FFFFFF 0%,      /* pure white */
+    #FFFDFC 40%,     /* nearly white cream */
+    #FFEFF5 70%,     /* extremely soft blush pink */
+    #FFF8FC 100%     /* white with a tiny pink tone */
   );
-  color: var(--ink);
-  font-family: "Inter", "Helvetica", "Times New Roman";
+  color: #2F3A3D !important;   /* charcoal text, readable */
 }
+
 
 /* Headings */
 h1, h2, h3 {
