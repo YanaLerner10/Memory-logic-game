@@ -27,4 +27,69 @@ body {
   );
   color: var(--ink);
   font-family: "Inter", "Helvetica", "Times New Roman", sans-serif;
-  -webkit-
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Headings use Playfair Display but in charcoal (not pink) */
+h1, h2, h3 {
+  color: var(--ink);
+  font-family: "Playfair Display", Georgia, serif;
+  margin-top: 0;
+}
+
+/* Header banner — ultra-subtle, mostly white */
+.page-header {
+  background: linear-gradient(135deg, rgba(168,216,201,0.06), rgba(253,239,244,0.02));
+  color: var(--ink) !important;
+  border-bottom: 1px solid rgba(0,0,0,0.04);
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+/* Project name & tagline — charcoal for readability */
+.page-header .project-name,
+.page-header .project-tagline {
+  color: var(--ink) !important;
+  margin: 0;
+}
+
+/* Buttons, links */
+a, .btn {
+  color: var(--link);
+  transition: color 0.12s ease;
+}
+a:hover, .btn:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+/* Content container cards */
+.main-content,
+.container, /* some themes use .container */
+.content {
+  background: #FFFFFF;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+  padding: 1.5rem;
+}
+
+/* Footer — very pale cream */
+.site-footer {
+  background: var(--accent-3);
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  color: rgba(47,58,61,0.9);
+  padding: 1rem 0;
+}
+
+/* Utility: reduce pink tones elsewhere if any theme parts override */
+header, nav, .repository-content {
+  color: var(--ink) !important;
+}
+
+/* Small responsive tweaks */
+@media (max-width: 640px) {
+  .main-content {
+    padding: 1rem;
+  }
+}
