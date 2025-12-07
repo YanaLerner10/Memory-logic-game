@@ -2,61 +2,29 @@
 ---
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap');
 
-/* NOTE: do NOT @import the theme here via Liquid (e.g. @import "{{ site.theme }}";)
-   — that can break the Sass parser. GitHub Pages will include the theme automatically. */
+/* NOTE: Do NOT @import the theme here using Liquid (e.g. @import "{{ site.theme }}";).
+   GitHub Pages includes the theme automatically. */
 
-/* 🌸 Pastel customizations */
+/* Pastel / almost-white palette */
 :root {
-  --bg:        #FFFFFF;
-  --ink:       #2F3A3D;   /* dark charcoal text */
-  --accent:    #A8D8C9;   /* pastel sage green */
-  --accent-2:  #FDEFF4;   /* very pale blush */
-  --accent-3:  #FFFDF7;   /* near-white cream */
-  --link:      #A2C7C1;   /* soft teal */
+  --bg:        #FFFFFF;       /* page base: pure white */
+  --ink:       #2F3A3D;       /* charcoal text */
+  --accent:    #A8D8C9;       /* pastel sage */
+  --accent-2:  #FDEFF4;       /* extremely pale blush */
+  --accent-3:  #FFFDF7;       /* near-white cream */
+  --link:      #7CB8B1;       /* muted teal links */
 }
 
 /* Global page colors */
 body {
+  /* Mostly-white diagonal gradient with an ultra-faint pastel hint */
   background: linear-gradient(
     135deg,
     #FFFFFF 0%,
-    #FFFFFF 45%,
-    #FFFDFD 75%,
-    #FFF8FC 100%
+    #FFFFFF 48%,
+    #FFFEFD 78%,
+    #FFFDFB 100%
   );
   color: var(--ink);
-  font-family: "Inter", "Helvetica", "Times New Roman";
-}
-
-/* Headings */
-h1, h2, h3 {
-  color: var(--ink);
-  font-family: "Playfair Display", Georgia, serif;
-}
-
-/* Header banner for Primer theme - very subtle, almost white */
-.page-header {
-  background: linear-gradient(135deg, rgba(168,216,201,0.10), rgba(253,239,244,0.06));
-  color: #2F3A3D !important;
-  border-bottom: 1px solid rgba(0,0,0,0.04);
-}
-
-/* Buttons, links */
-a, .btn {
-  color: var(--link);
-}
-a:hover, .btn:hover {
-  color: var(--accent);
-  text-decoration: none;
-}
-
-/* Content container */
-.main-content {
-  background: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.045);
-  padding: 1.75rem;
-}
-
-/* Footer */
-.si
+  font-family: "Inter", "Helvetica", "Times New Roman", sans-serif;
+  -webkit-
