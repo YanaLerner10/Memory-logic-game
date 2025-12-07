@@ -1,22 +1,13 @@
 title: "Memory Logic Game"
-description: "A simple memory game built in Python"
+description: "Cute pink memory game"
 url: "https://yanalerner10.github.io"
-baseurl: "/Memory-logic-game"   # VERY important for project pages
+baseurl: "/Memory-logic-game"
 
-# Pick a theme (GitHub Pages built-in themes)
 theme: jekyll-theme-slate
-# Other options:
-# jekyll-theme-cayman
-# jekyll-theme-minimal
-# jekyll-theme-primer
-# jekyll-theme-modernist
-# jekyll-theme-midnight
 
-# Plugins allowed by GitHub Pages
 plugins:
   - jekyll-feed
 
-# If you add custom folders (like assets/, images/, pages/)
 include:
-   - assets
+  - assets
   - _layouts
