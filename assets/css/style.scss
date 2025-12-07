@@ -2,40 +2,31 @@
 ---
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap');
 
-/* Import your theme’s default styling */
-@import "{{ site.theme }}";
+/* NOTE: do NOT @import the theme here via Liquid (e.g. @import "{{ site.theme }}";)
+   — that can break the Sass parser. GitHub Pages will include the theme automatically. */
 
 /* 🌸 Pastel customizations */
 :root {
   --bg:        #FFFFFF;
   --ink:       #2F3A3D;   /* dark charcoal text */
   --accent:    #A8D8C9;   /* pastel sage green */
-  --accent-2:  #F8C8DC;   /* blush pink */
-  --accent-3:  #FFF2CC;   /* pale cream */
-  --link:      #7CB8B1;   /* muted teal */
+  --accent-2:  #FDEFF4;   /* very pale blush */
+  --accent-3:  #FFFDF7;   /* near-white cream */
+  --link:      #A2C7C1;   /* soft teal */
 }
 
 /* Global page colors */
 body {
-  .page-header {
   background: linear-gradient(
     135deg,
     #FFFFFF 0%,
-    #FFFDFC 40%,
-    #FFEFF5 70%,
+    #FFFFFF 45%,
+    #FFFDFD 75%,
     #FFF8FC 100%
   );
-  color: #2F3A3D !important;
+  color: var(--ink);
+  font-family: "Inter", "Helvetica", "Times New Roman";
 }
-
-  );
-  color: #2F3A3D !important;
-}
-
-  );
-  color: #2F3A3D !important;   /* charcoal text, readable */
-}
-
 
 /* Headings */
 h1, h2, h3 {
@@ -43,10 +34,11 @@ h1, h2, h3 {
   font-family: "Playfair Display", Georgia, serif;
 }
 
-/* Header banner for Primer theme */
+/* Header banner for Primer theme - very subtle, almost white */
 .page-header {
-  background: linear-gradient(135deg, var(--accent), var(--accent-2));
-  color: #fff;
+  background: linear-gradient(135deg, rgba(168,216,201,0.10), rgba(253,239,244,0.06));
+  color: #2F3A3D !important;
+  border-bottom: 1px solid rgba(0,0,0,0.04);
 }
 
 /* Buttons, links */
@@ -60,29 +52,11 @@ a:hover, .btn:hover {
 
 /* Content container */
 .main-content {
-  background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-  padding: 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.045);
+  padding: 1.75rem;
 }
 
 /* Footer */
-.site-footer {
-  background: var(--accent-3);
-  border-top: 1px solid rgba(0, 0, 0, 0.08);
-}
-
-/* Pink headings + project name */
-.page-header .project-name,
-.page-header .project-tagline,
-h1,
-h2,
-h3 {
-  color: #C3636D !important; /* warm rose */
-}
-
-/* Header text override */
-.page-header .project-name,
-.page-header .project-tagline {
-  color: #2F3A3D !important; /* charcoal */
-}
+.si
