@@ -1,95 +1,51 @@
----
----
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap');
-
-/* NOTE: Do NOT @import the theme here using Liquid (e.g. @import "{{ site.theme }}";).
-   GitHub Pages includes the theme automatically. */
-
-/* Pastel / almost-white palette */
-:root {
-  --bg:        #FFFFFF;       /* page base: pure white */
-  --ink:       #2F3A3D;       /* charcoal text */
-  --accent:    #A8D8C9;       /* pastel sage */
-  --accent-2:  #FDEFF4;       /* extremely pale blush */
-  --accent-3:  #FFFDF7;       /* near-white cream */
-  --link:      #7CB8B1;       /* muted teal links */
-}
-
-/* Global page colors */
 body {
-  /* Mostly-white diagonal gradient with an ultra-faint pastel hint */
-  background: linear-gradient(
-    135deg,
-    #FFFFFF 0%,
-    #FFFFFF 48%,
-    #FFFEFD 78%,
-    #FFFDFB 100%
-  );
-  color: var(--ink);
-  font-family: "Inter", "Helvetica", "Times New Roman", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #ffe7f0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #4a3f4e;
+  padding: 20px;
 }
 
-/* Headings use Playfair Display but in charcoal (not pink) */
-h1, h2, h3 {
-  color: var(--ink);
-  font-family: "Playfair Display", Georgia, serif;
-  margin-top: 0;
+header {
+  background: linear-gradient(135deg, #ff9acb, #ffb6d9, #ffd6e8);
+  padding: 25px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(255, 150, 180, 0.4);
+  margin-bottom: 25px;
 }
 
-/* Header banner — ultra-subtle, mostly white */
-.page-header {
-  background: linear-gradient(135deg, rgba(168,216,201,0.06), rgba(253,239,244,0.02));
-  color: var(--ink) !important;
-  border-bottom: 1px solid rgba(0,0,0,0.04);
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
-/* Project name & tagline — charcoal for readability */
-.page-header .project-name,
-.page-header .project-tagline {
-  color: var(--ink) !important;
-  margin: 0;
-}
-
-/* Buttons, links */
-a, .btn {
-  color: var(--link);
-  transition: color 0.12s ease;
-}
-a:hover, .btn:hover {
-  color: var(--accent);
+.site-title a {
+  color: white;
+  font-size: 2.3rem;
+  font-weight: 700;
   text-decoration: none;
+  text-shadow: 1px 1px 3px rgba(180, 60, 120, 0.4);
 }
 
-/* Content container cards */
-.main-content,
-.container, /* some themes use .container */
-.content {
-  background: #FFFFFF;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
-  padding: 1.5rem;
+main {
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 4px 12px rgba(255, 140, 180, 0.25);
+  line-height: 1.7;
 }
 
-/* Footer — very pale cream */
-.site-footer {
-  background: var(--accent-3);
-  border-top: 1px solid rgba(0, 0, 0, 0.06);
-  color: rgba(47,58,61,0.9);
-  padding: 1rem 0;
+h1, h2, h3 {
+  color: #e0639a;
+  font-weight: 700;
 }
 
-/* Utility: reduce pink tones elsewhere if any theme parts override */
-header, nav, .repository-content {
-  color: var(--ink) !important;
+a {
+  color: #e0639a;
+  font-weight: 600;
 }
 
-/* Small responsive tweaks */
-@media (max-width: 640px) {
-  .main-content {
-    padding: 1rem;
-  }
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  margin-top: 30px;
+  text-align: center;
+  color: #a06b92;
 }
