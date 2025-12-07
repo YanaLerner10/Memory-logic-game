@@ -1,0 +1,71 @@
+---
+---
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap');
+
+/* Import your theme’s default styling */
+@import "{{ site.theme }}";
+
+/* 🌸 Pastel customizations (soft sage, blush, and cream) */
+:root {
+  --bg:        #FFF8F8;   /* soft beige background */
+  --ink:       #2F3A3D;   /* dark charcoal text */
+  --accent:    #A8D8C9;   /* pastel sage green */
+  --accent-2:  #F8C8DC;   /* light blush pink */
+  --accent-3:  #FFF2CC;   /* pale cream yellow */
+  --link:      #7CB8B1;   /* muted teal links */
+}
+
+/* Global page colors */
+body {
+  background-color: var(--bg);
+  color: var(--ink);
+  font-family: "Inter", "Helvetica" "Times new roman";
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: var(--ink);
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+/* Header banner (for Cayman, Slate, etc.) */
+.page-header {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: #fff;
+}
+
+/* Buttons, links */
+a, .btn {
+  color: var(--link);
+}
+a:hover, .btn:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+/* Content cards */
+.main-content {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+}
+
+/* Footer */
+.site-footer {
+  background: var(--accent-3);
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.page-header .project-name,
+.page-header .project-tagline,
+h1,
+h2,
+h3 {
+  color: #C3636D !important; /* warm rose */
+}
+
+.page-header .project-name,
+.page-header .project-tagline {
+  color: #2F3A3D !important; /* charcoal */
+  }
