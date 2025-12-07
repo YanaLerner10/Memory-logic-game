@@ -1,18 +1,20 @@
 ---
 ---
-/* Google fonts optional — you said Helvetica is enough, so NOT importing any fonts */
-/* Cayman theme auto-loads its own base CSS. No @import needed. */
 
-/* Color palette */
+/* ===========================
+   Color Palette
+=========================== */
 :root {
-  --ink:        #2F3A3D;        /* charcoal */
+  --ink:        #2F3A3D;        /* charcoal text */
   --heading:    #D97A9A;        /* soft warm pink */
-  --lavender-1: #FFFFFF;        /* mostly white */
-  --lavender-2: #F9F7FF;        /* extra pale lavender */
+  --lavender-1: #FFFFFF;        /* white */
+  --lavender-2: #F9F7FF;        /* pale lavender */
   --lavender-3: #F3EEFF;        /* soft lavender tint */
 }
 
-/* Global page background */
+/* ===========================
+   Global Page Background
+=========================== */
 body {
   background: linear-gradient(
     135deg,
@@ -26,56 +28,81 @@ body {
   padding: 0;
 }
 
-/* Headings = pink */
+/* ===========================
+   Headings (pink)
+=========================== */
 h1, h2, h3, h4, h5, h6 {
   color: var(--heading) !important;
   font-family: "Helvetica", "Arial", sans-serif;
 }
 
-/* Cayman top banner (project title header) */
+/* ===========================
+   Header (Cayman theme)
+   Centered + spacious
+=========================== */
 .page-header {
-  background-color: var(--ink) !important;  /* charcoal */
-  background-image: none !important;        /* remove Cayman gradient */
-  color: #FFFFFF !important;                /* title text on charcoal */
-  padding: 2.5rem 1rem;
-  border-bottom: 1px solid rgba(0,0,0,0.1);
-}
-
-/* Title + subtitle inside header */
-.page-header .project-name,
-.page-header .project-tagline {
+  background-color: var(--ink) !important;
+  background-image: none !important;
   color: #FFFFFF !important;
-  font-family: "Helvetica", "Arial", sans-serif;
+
+  text-align: center;
+
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  margin-bottom: 2.5rem;
 }
 
-/* Links */
+/* Header Title */
+.page-header .project-name {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: #FFFFFF !important;
+}
+
+/* Header Tagline */
+.page-header .project-tagline {
+  font-size: 1.4rem;
+  font-weight: 400;
+  opacity: 0.85;
+  color: #FFFFFF !important;
+}
+
+/* ===========================
+   Main Content (centered box)
+=========================== */
+.main-content {
+  max-width: 900px;
+  margin: 2rem auto;
+  text-align: left;
+
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.06);
+}
+
+/* ===========================
+   Links
+=========================== */
 a {
-  color: var(--heading); /* pink links */
+  color: var(--heading);
 }
 a:hover {
   color: #b05b7d;
   text-decoration: none;
 }
 
-/* Main content box (Cayman uses this) */
-.main-content {
-  background: #FFFFFF;
-  border-radius: 12px;
-  padding: 2rem;
-  box-shadow: 0 8px 28px rgba(0,0,0,0.06);
-}
-
-/* Footer customization */
+/* ===========================
+   Footer
+=========================== */
 .site-footer {
   background: #FAF9FE;
   border-top: 1px solid rgba(0,0,0,0.05);
   color: var(--ink);
   padding: 1.2rem 0;
   font-family: "Helvetica", "Arial", sans-serif;
-}
-/* Center the main content block but keep text left-aligned */
-.main-content {
-  max-width: 900px;    /* nice readable width */
-  margin: 2rem auto;   /* centers the whole block horizontally */
-  text-align: left;    /* makes sure text stays left-aligned */
 }
