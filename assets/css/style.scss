@@ -5,21 +5,27 @@
 /* Import your theme’s default styling */
 @import "{{ site.theme }}";
 
-/* 🌸 Pastel customizations (soft sage, blush, and cream) */
+/* 🌸 Pastel customizations */
 :root {
-  --bg:        #FFF8F8;   /* soft beige background */
+  --bg:        #FFFFFF;
   --ink:       #2F3A3D;   /* dark charcoal text */
   --accent:    #A8D8C9;   /* pastel sage green */
-  --accent-2:  #F8C8DC;   /* light blush pink */
-  --accent-3:  #FFF2CC;   /* pale cream yellow */
-  --link:      #7CB8B1;   /* muted teal links */
+  --accent-2:  #F8C8DC;   /* blush pink */
+  --accent-3:  #FFF2CC;   /* pale cream */
+  --link:      #7CB8B1;   /* muted teal */
 }
 
 /* Global page colors */
 body {
-  background-color: var(--bg);
+  background: linear-gradient(
+    135deg,
+    #FFFFFF 0%,
+    #FFFDFD 40%,
+    #FDF7FA 70%,
+    #FAF9FF 100%
+  );
   color: var(--ink);
-  font-family: "Inter", "Helvetica" "Times new roman";
+  font-family: "Inter", "Helvetica", "Times New Roman";
 }
 
 /* Headings */
@@ -28,7 +34,7 @@ h1, h2, h3 {
   font-family: "Playfair Display", Georgia, serif;
 }
 
-/* Header banner (for Cayman, Slate, etc.) */
+/* Header banner for Primer theme */
 .page-header {
   background: linear-gradient(135deg, var(--accent), var(--accent-2));
   color: #fff;
@@ -43,7 +49,7 @@ a:hover, .btn:hover {
   text-decoration: none;
 }
 
-/* Content cards */
+/* Content container */
 .main-content {
   background: #fff;
   border-radius: 16px;
@@ -57,6 +63,7 @@ a:hover, .btn:hover {
   border-top: 1px solid rgba(0, 0, 0, 0.08);
 }
 
+/* Pink headings + project name */
 .page-header .project-name,
 .page-header .project-tagline,
 h1,
@@ -65,7 +72,8 @@ h3 {
   color: #C3636D !important; /* warm rose */
 }
 
+/* Header text override */
 .page-header .project-name,
 .page-header .project-tagline {
   color: #2F3A3D !important; /* charcoal */
-  }
+}
